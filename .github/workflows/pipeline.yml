@@ -12,8 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a one-line script
-        run: mkdir test
+      - name: verify docker
+        run: |
+          docker --version
+          node -v
+          npm -v
+          git --version
+          
 
       - uses: actions/checkout@v5
 
