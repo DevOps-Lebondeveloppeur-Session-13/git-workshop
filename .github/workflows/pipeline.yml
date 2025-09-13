@@ -28,7 +28,7 @@ jobs:
 
   job-3:
     runs-on: ubuntu-latest
-
+    needs: job-1
     steps:
       - name: Run a multi-line script
         run: ls -l
